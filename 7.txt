@@ -1,0 +1,18 @@
+
+# 7) archive.html
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>الأرشيف</title>
+</head>
+<body>
+<div class="container">
+<h1>أرشيف المقالات</h1>
+<p>أبريل 2026 – مارس 2026 – فبراير 2026</p>
+</div>
+</body>
+</html>
+```

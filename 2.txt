@@ -1,0 +1,23 @@
+
+# 2) article.html
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>مقال</title>
+</head>
+<body>
+<header class="header"><a href="index.html">العودة للرئيسية</a></header>
+<main class="article">
+<h1>كيف يغير الذكاء الاصطناعي مستقبل البحث العلمي؟</h1>
+<p class="meta">بواسطة فريق التحرير • 5 دقائق قراءة</p>
+<p>يشهد العالم تسارعاً هائلاً في استخدام الذكاء الاصطناعي في المختبرات والجامعات...</p>
+<h2>أهم التطبيقات</h2>
+<p>تحليل البيانات الضخمة، التنبؤ العلمي، النماذج الذكية...</p>
+<div class="tags">وسوم: ذكاء اصطناعي – تعليم – تقنية</div>
+</main>
+</body>
+</html>
+```

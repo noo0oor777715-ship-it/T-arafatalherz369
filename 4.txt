@@ -1,0 +1,18 @@
+
+# 4) author.html
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>الكاتب</title>
+</head>
+<body>
+<div class="container">
+<h1>فريق التحرير</h1>
+<p>منصة تعليمية تهدف لنشر المعرفة وتعزيز الانتماء الوطني.</p>
+</div>
+</body>
+</html>
+```

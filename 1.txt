@@ -1,0 +1,61 @@
+
+# 1) index.html
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>قيمة الانتماء الوطني | مجلة المدرسة</title>
+<meta name="description" content="منصة تعليمية معرفية لعرض المقالات والأخبار والتحليلات">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+<div class="logo">قيمة الانتماء الوطني</div>
+<nav id="nav">
+<a href="index.html">الرئيسية</a>
+<a href="category.html">التصنيفات</a>
+<a href="archive.html">الأرشيف</a>
+<a href="about.html">من نحن</a>
+<a href="contact.html">تواصل</a>
+</nav>
+<div class="actions">
+<input type="text" placeholder="بحث..." class="search">
+<button id="modeToggle">🌙</button>
+</div>
+</header>
+
+<section class="hero">
+<div>
+<h1>منصة معرفية تعليمية حديثة</h1>
+<p>مدرسة متوسطة سودة بنت زمعة – إعداد المعلمة عرفات الحرز</p>
+<a href="article.html" class="btn">قراءة المقال الرئيسي</a>
+</div>
+</section>
+
+<main class="container">
+<h2>مقالات مميزة</h2>
+<div class="grid">
+<article class="card"><h3>كيف يغير الذكاء الاصطناعي مستقبل البحث العلمي؟</h3></article>
+<article class="card"><h3>الخرائط الرقمية ودورها في فهم المدن الحديثة</h3></article>
+<article class="card"><h3>التقنية والثقافة: علاقة تتوسع كل يوم</h3></article>
+</div>
+
+<h2>أحدث المقالات</h2>
+<div class="grid">
+<article class="card"><h3>القراءة في عصر السرعة</h3></article>
+<article class="card"><h3>كيف تبني مدونة معرفية ناجحة؟</h3></article>
+<article class="card"><h3>التعليم الرقمي ومستقبل المدارس</h3></article>
+</div>
+</main>
+
+<footer class="footer">
+<p>© 2026 مجلة قيمة الانتماء الوطني. جميع الحقوق محفوظة.</p>
+<p>Designed with T-ArafatAlherz style</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+```
