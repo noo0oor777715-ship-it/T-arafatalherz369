@@ -1,0 +1,472 @@
+
+# 6) contact.html
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>تواصل معنا</title>
+</head>
+<body>
+<div class="container">
+<h1>تواصل معنا</h1>
+<form class="form">
+<input placeholder="الاسم">
+<input placeholder="البريد">
+<textarea placeholder="رسالتك"></textarea>
+<button class="btn">إرسال</button>
+</form>
+</div>
+</body>
+</html>
+```
+
+
+# 7) archive.html
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>الأرشيف</title>
+</head>
+<body>
+<div class="container">
+<h1>أرشيف المقالات</h1>
+<p>أبريل 2026 – مارس 2026 – فبراير 2026</p>
+</div>
+</body>
+</html>
+```
+
+# 8) search.html
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>البحث</title>
+</head>
+<body>
+<div class="container">
+<h1>نتائج البحث</h1>
+<div class="card">نتيجة تجريبية</div>
+</div>
+</body>
+</html>
+```
+
+# 9) style.css
+```css
+body{font-family:Cairo;background:#f4f6fb;margin:0}
+.header{display:flex;justify-content:space-between;padding:15px 30px;background:#0f2a44;color:#fff}
+.hero{padding:80px;background:linear-gradient(120deg,#0f2a44,#1c4d80);color:white;text-align:center}
+.container{padding:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:white;padding:20px;border-radius:15px;box-shadow:0 10px 20px rgba(0,0,0,.08)}
+.btn{background:#c9a227;color:white;padding:10px 20px;border-radius:8px;text-decoration:none;border:none}
+.footer{background:#0f2a44;color:#fff;text-align:center;padding:30px}
+.form input,.form textarea{display:block;width:100%;margin:10px 0;padding:12px}
+.center{text-align:center}
+.article{padding:40px;max-width:800px;margin:auto}
+```
+
+# T-arafatalherz369
+# مشروع موقع مجلة المدرسة – T-ArafatAlherz
+
+هيكل الموقع جاهز للرفع على GitHub Pages (HTML + CSS + JS)
+
+============================
+
+# 1) index.html
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>قيمة الانتماء الوطني | مجلة المدرسة</title>
+<meta name="description" content="منصة تعليمية معرفية لعرض المقالات والأخبار والتحليلات">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+<div class="logo">قيمة الانتماء الوطني</div>
+<nav id="nav">
+<a href="index.html">الرئيسية</a>
+<a href="category.html">التصنيفات</a>
+<a href="archive.html">الأرشيف</a>
+<a href="about.html">من نحن</a>
+<a href="contact.html">تواصل</a>
+</nav>
+<div class="actions">
+<input type="text" placeholder="بحث..." class="search">
+<button id="modeToggle">🌙</button>
+</div>
+</header>
+
+<section class="hero">
+<div>
+<h1>منصة معرفية تعليمية حديثة</h1>
+<p>مدرسة متوسطة سودة بنت زمعة – إعداد المعلمة عرفات الحرز</p>
+<a href="article.html" class="btn">قراءة المقال الرئيسي</a>
+</div>
+</section>
+
+<main class="container">
+<h2>مقالات مميزة</h2>
+<div class="grid">
+<article class="card"><h3>كيف يغير الذكاء الاصطناعي مستقبل البحث العلمي؟</h3></article>
+<article class="card"><h3>الخرائط الرقمية ودورها في فهم المدن الحديثة</h3></article>
+<article class="card"><h3>التقنية والثقافة: علاقة تتوسع كل يوم</h3></article>
+</div>
+
+<h2>أحدث المقالات</h2>
+<div class="grid">
+<article class="card"><h3>القراءة في عصر السرعة</h3></article>
+<article class="card"><h3>كيف تبني مدونة معرفية ناجحة؟</h3></article>
+<article class="card"><h3>التعليم الرقمي ومستقبل المدارس</h3></article>
+</div>
+</main>
+
+<footer class="footer">
+<p>© 2026 مجلة قيمة الانتماء الوطني. جميع الحقوق محفوظة.</p>
+<p>Designed with T-ArafatAlherz style</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+```
+
+============================
+
+# 2) article.html
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>مقال</title>
+</head>
+<body>
+<header class="header"><a href="index.html">العودة للرئيسية</a></header>
+<main class="article">
+<h1>كيف يغير الذكاء الاصطناعي مستقبل البحث العلمي؟</h1>
+<p class="meta">بواسطة فريق التحرير • 5 دقائق قراءة</p>
+<p>يشهد العالم تسارعاً هائلاً في استخدام الذكاء الاصطناعي في المختبرات والجامعات...</p>
+<h2>أهم التطبيقات</h2>
+<p>تحليل البيانات الضخمة، التنبؤ العلمي، النماذج الذكية...</p>
+<div class="tags">وسوم: ذكاء اصطناعي – تعليم – تقنية</div>
+</main>
+</body>
+</html>
+```
+
+============================
+
+# 3) category.html
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>التصنيفات</title>
+</head>
+<body>
+<h1 class="center">التصنيفات</h1>
+<div class="grid container">
+<div class="card">علوم</div>
+<div class="card">تقنية</div>
+<div class="card">ثقافة</div>
+<div class="card">تاريخ</div>
+<div class="card">أدب</div>
+<div class="card">ذكاء اصطناعي</div>
+</div>
+</body>
+</html>
+```
+
+============================
+
+# 4) author.html
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>الكاتب</title>
+</head>
+<body>
+<div class="container">
+<h1>فريق التحرير</h1>
+<p>منصة تعليمية تهدف لنشر المعرفة وتعزيز الانتماء الوطني.</p>
+</div>
+</body>
+</html>
+```
+
+============================
+
+# 5) about.html
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>من نحن</title>
+</head>
+<body>
+<div class="container">
+<h1>من نحن</h1>
+<p>مجلة تعليمية مدرسية تهدف لتعزيز المعرفة والانتماء الوطني.</p>
+</div>
+</body>
+</html>
+```
+
+============================
+
+# 6) contact.html
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>تواصل معنا</title>
+</head>
+<body>
+<div class="container">
+<h1>تواصل معنا</h1>
+<form class="form">
+<input placeholder="الاسم">
+<input placeholder="البريد">
+<textarea placeholder="رسالتك"></textarea>
+<button class="btn">إرسال</button>
+</form>
+</div>
+</body>
+</html>
+```
+
+============================
+
+# 7) archive.html
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>الأرشيف</title>
+</head>
+<body>
+<div class="container">
+<h1>أرشيف المقالات</h1>
+<p>أبريل 2026 – مارس 2026 – فبراير 2026</p>
+</div>
+</body>
+</html>
+```
+
+============================
+
+# 8) search.html
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>البحث</title>
+</head>
+<body>
+<div class="container">
+<h1>نتائج البحث</h1>
+<div class="card">نتيجة تجريبية</div>
+</div>
+</body>
+</html>
+```
+
+============================
+
+# 9) style.css
+```css
+body{font-family:Cairo;background:#f4f6fb;margin:0}
+.header{display:flex;justify-content:space-between;padding:15px 30px;background:#0f2a44;color:#fff}
+.hero{padding:80px;background:linear-gradient(120deg,#0f2a44,#1c4d80);color:white;text-align:center}
+.container{padding:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:white;padding:20px;border-radius:15px;box-shadow:0 10px 20px rgba(0,0,0,.08)}
+.btn{background:#c9a227;color:white;padding:10px 20px;border-radius:8px;text-decoration:none;border:none}
+.footer{background:#0f2a44;color:#fff;text-align:center;padding:30px}
+.form input,.form textarea{display:block;width:100%;margin:10px 0;padding:12px}
+.center{text-align:center}
+.article{padding:40px;max-width:800px;margin:auto}
+```
+
+============================
+
+# 10) script.js
+```javascript
+const btn=document.getElementById('modeToggle');
+btn?.addEventListener('click',()=>{
+ document.body.classList.toggle('dark');
+});
+```
+
+============================
+
+تم إنشاء المشروع كاملاً — جاهز للرفع على GitHub Pages.
+
+
+# 1) index.html
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>قيمة الانتماء الوطني | مجلة المدرسة</title>
+<meta name="description" content="منصة تعليمية معرفية لعرض المقالات والأخبار والتحليلات">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+<div class="logo">قيمة الانتماء الوطني</div>
+<nav id="nav">
+<a href="index.html">الرئيسية</a>
+<a href="category.html">التصنيفات</a>
+<a href="archive.html">الأرشيف</a>
+<a href="about.html">من نحن</a>
+<a href="contact.html">تواصل</a>
+</nav>
+<div class="actions">
+<input type="text" placeholder="بحث..." class="search">
+<button id="modeToggle">🌙</button>
+</div>
+</header>
+
+<section class="hero">
+<div>
+<h1>منصة معرفية تعليمية حديثة</h1>
+<p>مدرسة متوسطة سودة بنت زمعة – إعداد المعلمة عرفات الحرز</p>
+<a href="article.html" class="btn">قراءة المقال الرئيسي</a>
+</div>
+</section>
+
+<main class="container">
+<h2>مقالات مميزة</h2>
+<div class="grid">
+<article class="card"><h3>كيف يغير الذكاء الاصطناعي مستقبل البحث العلمي؟</h3></article>
+<article class="card"><h3>الخرائط الرقمية ودورها في فهم المدن الحديثة</h3></article>
+<article class="card"><h3>التقنية والثقافة: علاقة تتوسع كل يوم</h3></article>
+</div>
+
+<h2>أحدث المقالات</h2>
+<div class="grid">
+<article class="card"><h3>القراءة في عصر السرعة</h3></article>
+<article class="card"><h3>كيف تبني مدونة معرفية ناجحة؟</h3></article>
+<article class="card"><h3>التعليم الرقمي ومستقبل المدارس</h3></article>
+</div>
+</main>
+
+<footer class="footer">
+<p>© 2026 مجلة قيمة الانتماء الوطني. جميع الحقوق محفوظة.</p>
+<p>Designed with T-ArafatAlherz style</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+```
+
+# 2) article.html
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>مقال</title>
+</head>
+<body>
+<header class="header"><a href="index.html">العودة للرئيسية</a></header>
+<main class="article">
+<h1>كيف يغير الذكاء الاصطناعي مستقبل البحث العلمي؟</h1>
+<p class="meta">بواسطة فريق التحرير • 5 دقائق قراءة</p>
+<p>يشهد العالم تسارعاً هائلاً في استخدام الذكاء الاصطناعي في المختبرات والجامعات...</p>
+<h2>أهم التطبيقات</h2>
+<p>تحليل البيانات الضخمة، التنبؤ العلمي، النماذج الذكية...</p>
+<div class="tags">وسوم: ذكاء اصطناعي – تعليم – تقنية</div>
+</main>
+</body>
+</html>
+```
+
+# 3) category.html
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>التصنيفات</title>
+</head>
+<body>
+<h1 class="center">التصنيفات</h1>
+<div class="grid container">
+<div class="card">علوم</div>
+<div class="card">تقنية</div>
+<div class="card">ثقافة</div>
+<div class="card">تاريخ</div>
+<div class="card">أدب</div>
+<div class="card">ذكاء اصطناعي</div>
+</div>
+</body>
+</html>
+
+# 4) author.html
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>الكاتب</title>
+</head>
+<body>
+<div class="container">
+<h1>فريق التحرير</h1>
+<p>منصة تعليمية تهدف لنشر المعرفة وتعزيز الانتماء الوطني.</p>
+</div>
+</body>
+</html>
+```
+
+# 5) about.html
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>من نحن</title>
+</head>
+<body>
+<div class="container">
+<h1>من نحن</h1>
+<p>مجلة تعليمية مدرسية تهدف لتعزيز المعرفة والانتماء الوطني.</p>
+</div>
+</body>
+</html>
+```
